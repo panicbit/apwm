@@ -1,27 +1,43 @@
 use std::path::PathBuf;
 
-use clap::{Args, Parser, Subcommand, ValueEnum};
-use semver::Version;
+use anyhow::Result;
+use clap::{Parser, Subcommand, ValueEnum};
+
+pub mod install;
+pub mod list;
+pub mod search;
 
 #[derive(Parser)]
 pub struct Cli {
     #[clap(subcommand)]
     pub command: Command,
+    #[clap(flatten)]
+    pub common: CommonArgs,
+}
+
+impl Cli {
+    pub fn run(self) -> Result<()> {
+        let index = crate::index::load("index.toml")?;
+
+        match self.command {
+            Command::List(args) => list::run(&self.common, args, &index),
+            Command::Search(_args) => todo!(),
+            Command::Install(args) => install::run(&self.common, args, &index),
+        }
+    }
+}
+
+#[derive(clap::Args)]
+pub struct CommonArgs {
     #[clap(long)]
     pub root: PathBuf,
 }
 
 #[derive(Subcommand)]
 pub enum Command {
-    List(List),
-    Search,
-    Install(Install),
-}
-
-#[derive(Args)]
-pub struct List {
-    #[clap(long, short, value_enum, default_value_t = Format::default())]
-    pub format: Format,
+    List(list::Args),
+    Search(search::Args),
+    Install(install::Args),
 }
 
 #[derive(ValueEnum, Default, Clone)]
@@ -29,12 +45,4 @@ pub enum Format {
     #[default]
     Text,
     Json,
-}
-
-#[derive(Args)]
-pub struct Install {
-    pub world: String,
-    #[clap(long, short)]
-    /// world version to install, defaults to latest non-prerelease version
-    pub version: Option<Version>,
 }
