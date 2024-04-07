@@ -1,0 +1,15 @@
+version = "1"
+
+[worlds.pokemon_crystal]
+name = "Pokemon Crystal"
+
+[[worlds.pokemon_crystal.releases]]
+version = "0.1.0"
+url = "https://github.com/AliceMousie/Archipelago/releases/download/0.1/pokemon_crystal.apworld"
+
+[worlds.wl]
+name = "Wario Land 1"
+
+[[worlds.wl.releases]]
+version = "1.2.1"
+url = "https://github.com/randomcodegen/Archipelago_WL/releases/download/1.2.1/wl.apworld"
