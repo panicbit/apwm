@@ -7,9 +7,94 @@ name = "Pokemon Crystal"
 version = "0.1.0"
 url = "https://github.com/AliceMousie/Archipelago/releases/download/0.1/pokemon_crystal.apworld"
 
+
 [worlds.wl]
 name = "Wario Land 1"
 
 [[worlds.wl.releases]]
-version = "1.2.1"
 url = "https://github.com/randomcodegen/Archipelago_WL/releases/download/1.2.1/wl.apworld"
+version = "1.2.1"
+
+[[worlds.wl.releases]]
+url = "https://github.com/randomcodegen/Archipelago_WL/releases/download/1.2.0/wl.apworld"
+version = "1.2.0"
+
+[[worlds.wl.releases]]
+url = "https://github.com/randomcodegen/Archipelago_WL/releases/download/1.1.9/wl.apworld"
+version = "1.1.9"
+
+[[worlds.wl.releases]]
+url = "https://github.com/randomcodegen/Archipelago_WL/releases/download/1.1.8/wl.apworld"
+version = "1.1.8"
+
+[[worlds.wl.releases]]
+url = "https://github.com/randomcodegen/Archipelago_WL/releases/download/1.1.7/wl.apworld"
+version = "1.1.7"
+
+[[worlds.wl.releases]]
+url = "https://github.com/randomcodegen/Archipelago_WL/releases/download/1.1.6/wl.apworld"
+version = "1.1.6"
+
+[[worlds.wl.releases]]
+url = "https://github.com/randomcodegen/Archipelago_WL/releases/download/1.1.5/wl.apworld"
+version = "1.1.5"
+
+[[worlds.wl.releases]]
+url = "https://github.com/randomcodegen/Archipelago_WL/releases/download/1.1.4/wl.apworld"
+version = "1.1.4"
+
+[[worlds.wl.releases]]
+url = "https://github.com/randomcodegen/Archipelago_WL/releases/download/1.1.3/wl.apworld"
+version = "1.1.3"
+
+[[worlds.wl.releases]]
+url = "https://github.com/randomcodegen/Archipelago_WL/releases/download/1.1.2/wl.apworld"
+version = "1.1.2"
+
+[[worlds.wl.releases]]
+url = "https://github.com/randomcodegen/Archipelago_WL/releases/download/1.1.1/wl.apworld"
+version = "1.1.1"
+
+[[worlds.wl.releases]]
+url = "https://github.com/randomcodegen/Archipelago_WL/releases/download/1.1.0/wl.apworld"
+version = "1.1.0"
+
+[[worlds.wl.releases]]
+url = "https://github.com/randomcodegen/Archipelago_WL/releases/download/1.0.9/wl.apworld"
+version = "1.0.9"
+
+[[worlds.wl.releases]]
+url = "https://github.com/randomcodegen/Archipelago_WL/releases/download/1.0.8/wl.apworld"
+version = "1.0.8"
+
+[[worlds.wl.releases]]
+url = "https://github.com/randomcodegen/Archipelago_WL/releases/download/1.0.7/wl.apworld"
+version = "1.0.7"
+
+[[worlds.wl.releases]]
+url = "https://github.com/randomcodegen/Archipelago_WL/releases/download/1.0.6/wl.apworld"
+version = "1.0.6"
+
+[[worlds.wl.releases]]
+url = "https://github.com/randomcodegen/Archipelago_WL/releases/download/1.0.5/wl.apworld"
+version = "1.0.5"
+
+[[worlds.wl.releases]]
+url = "https://github.com/randomcodegen/Archipelago_WL/releases/download/1.0.4/wl.apworld"
+version = "1.0.4"
+
+[[worlds.wl.releases]]
+url = "https://github.com/randomcodegen/Archipelago_WL/releases/download/1.0.3/wl.apworld"
+version = "1.0.3"
+
+[[worlds.wl.releases]]
+url = "https://github.com/randomcodegen/Archipelago_WL/releases/download/1.0.2/wl.apworld"
+version = "1.0.2"
+
+[[worlds.wl.releases]]
+url = "https://github.com/randomcodegen/Archipelago_WL/releases/download/1.0.1/wl.apworld"
+version = "1.0.1"
+
+[[worlds.wl.releases]]
+url = "https://github.com/randomcodegen/Archipelago_WL/releases/download/1.0.0/wl.apworld"
+version = "1.0.0"
