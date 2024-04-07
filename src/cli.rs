@@ -3,6 +3,7 @@ use std::path::PathBuf;
 use anyhow::Result;
 use clap::{Parser, Subcommand, ValueEnum};
 
+pub mod apply;
 pub mod install;
 pub mod list;
 pub mod search;
@@ -18,11 +19,13 @@ pub struct Cli {
 impl Cli {
     pub fn run(self) -> Result<()> {
         let index = crate::index::load("index.toml")?;
+        let common = &self.common;
 
         match self.command {
-            Command::List(args) => list::run(&self.common, args, &index),
+            Command::List(args) => list::run(common, args, &index),
             Command::Search(_args) => todo!(),
-            Command::Install(args) => install::run(&self.common, args, &index),
+            Command::Install(args) => install::run(common, args, &index),
+            Command::Apply(args) => apply::run(common, args, &index),
         }
     }
 }
@@ -38,6 +41,7 @@ pub enum Command {
     List(list::Args),
     Search(search::Args),
     Install(install::Args),
+    Apply(apply::Args),
 }
 
 #[derive(ValueEnum, Default, Clone)]

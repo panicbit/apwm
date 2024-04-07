@@ -10,8 +10,8 @@ pub struct Index {
 }
 
 impl Index {
-    pub fn find_world(&self, name: &str) -> Option<&World> {
-        self.worlds.get(name)
+    pub fn find_world(&self, world_id: &str) -> Option<&World> {
+        self.worlds.get(world_id)
     }
 }
 
